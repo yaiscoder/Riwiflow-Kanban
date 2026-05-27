@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@mail.com",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Coder User",
+      "email": "coder@mail.com",
+      "password": "1234",
+      "role": "coder"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Setup project repo",
+      "description": "Initialize the Git repository and configure the development environment.",
+      "status": "done",
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "title": "Design login screen",
+      "description": "Create the login UI following the Figma design specifications.",
+      "status": "todo",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "title": "Build Kanban board",
+      "description": "Implement the four-column Kanban layout with task cards.",
+      "status": "in progress",
+      "userId": 2
+    },
+    {
+      "id": 4,
+      "title": "API integration",
+      "description": "Connect the frontend to json-server and test all CRUD endpoints.",
+      "status": "in review",
+      "userId": 2
+    }
+  ]
+}
