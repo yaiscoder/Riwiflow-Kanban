@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@mail.com",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Coder User",
+      "email": "coder@mail.com",
+      "password": "1234",
+      "role": "coder"
+    }
+  ],
+
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Test task",
+      "description": "Example",
+      "status": "todo",
+      "userId": 2
+    }
+  ]
+}
