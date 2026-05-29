@@ -54,7 +54,7 @@ riwiflow/
 ## 1. Clonar repositorio
 
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/yaiscoder/Riwiflow-Kanban.git
 ```
 
 
