@@ -1,4 +1,3 @@
-
 // El router decide qué página mostrar según la URL del navegador.
 
 import Login from './pages/login.js';
@@ -39,6 +38,15 @@ export function router() {
             history.pushState(null, null, currentPath);
         }
     }
+
+    // Título dinámico según la página
+    const pageTitles = {
+        '/': 'Riwiflow - Login',
+        '/dashboard': 'Riwiflow - Dashboard',
+        '/team': 'Riwiflow - Team'
+    };
+
+    document.title = pageTitles[currentPath] || 'Riwiflow';
 
     // Buscamos la página que corresponde a la URL actual
     // Si no existe, mostramos Login por defecto

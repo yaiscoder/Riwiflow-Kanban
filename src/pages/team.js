@@ -5,6 +5,7 @@
 
 import { navigate } from '../router.js';
 import { getUsers, createUser, updateUser, deleteUser } from '../services/userService.js';
+import { getTasks } from '../services/taskService.js';
 import { getSession, clearSession, isAdmin } from '../utils/session.js';
 
 export const teamPage = {
@@ -323,14 +324,42 @@ function attachUserButtonEvents(allUsers) {
 
     // Botones de eliminar (solo los habilitados)
     const deleteButtons = document.querySelectorAll('.btn-delete-user:not([disabled])');
+
     deleteButtons.forEach(function(button) {
         button.addEventListener('click', async function() {
+
             const userId = parseInt(button.dataset.userId);
-            const confirmed = confirm('Delete this user? This cannot be undone.');
+
+            // Obtenemos todas las tareas
+            const tasks = await getTasks();
+
+            // Verificamos si alguna tarea pertenece al usuario
+            const hasAssignedTasks = tasks.some(function(task) {
+                return task.userId === userId;
+            });
+
+            // Si tiene tareas asignadas, mostramos advertencia
+            if (hasAssignedTasks) {
+
+                const continueDelete = confirm(
+                    'This user has assigned tasks. Before deleting the user, you should reassign or remove those tasks.\n\nPress OK to continue deleting the user anyway, or Cancel to keep the user.'
+                );
+
+                if (!continueDelete) {
+                    return;
+                }
+            }
+
+            // Confirmación final de eliminación
+            const confirmed = confirm(
+                'Delete this user? This cannot be undone.'
+            );
+
             if (confirmed) {
                 await deleteUser(userId);
-                await showUsers(); // Recargamos la tabla
+                await showUsers();
             }
+
         });
     });
 }
