@@ -65,15 +65,6 @@ export const teamPage = {
               <div class="px-4 mt-auto space-y-3">
 
                 <!-- Info del usuario logueado -->
-                <div class="flex items-center gap-3 px-3 py-2 bg-surface-container rounded-xl">
-                  <div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-[11px] shrink-0">
-                    ${initials}
-                  </div>
-                  <div class="flex-1 min-w-0">
-                    <p class="font-label-md text-label-md text-on-surface truncate">${userName}</p>
-                    <p class="font-label-sm text-label-sm text-on-surface-variant capitalize">${userRole}</p>
-                  </div>
-                </div>
 
                 <!-- Botón Logout -->
                 <button id="logoutBtn" class="w-full flex items-center justify-center gap-2 py-2.5 px-4 border border-outline-variant rounded-xl font-label-md text-label-md text-secondary hover:text-error hover:border-error/30 hover:bg-error/5 transition-all">
@@ -104,12 +95,14 @@ export const teamPage = {
                   </div>
                 </div>
                 <div class="flex items-center gap-4 ml-4">
-                  <button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-low p-2 rounded-full transition-colors">notifications</button>
-                  <button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-low p-2 rounded-full transition-colors">help_outline</button>
-                  <div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-[11px] border border-outline-variant">
-                    ${initials}
+                    <button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-low p-2 rounded-full transition-colors">notifications</button>
+                    <button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-low p-2 rounded-full transition-colors">help_outline</button>
+                    <img
+                      alt="User profile"
+                      class="w-8 h-8 rounded-full border border-outline-variant object-cover"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2-sF_Qd9jEF33fUrS3vMvdoA8rbw2_a6jzv7r_6oDikCkrertidHwLgqAtWuKvLnRx7Lcsi79ZYj4FBaL_pETFxeyeF27_PhXy-KnuioiYgCwYTKcWDEuZoRksSf8Jb0_ZmsxJkpTFGZ2bW8aTl5fhcA4DOHQQal_vu1KVBcizoM56dHRc7Ce_vkUul2aL96DSeDmqR4YdfGUuoIQkUF_F8AX45U05tmCFg7YyPH6xtgAx7e31u5_5e2rQxm_tgBEgnhV-LsqsEDH"
+                    />
                   </div>
-                </div>
               </header>
 
               <!-- Contenido de la página -->

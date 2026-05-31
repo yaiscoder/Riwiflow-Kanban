@@ -13,6 +13,20 @@
       "email": "coder@mail.com",
       "password": "123456",
       "role": "coder"
+    },
+    {
+      "name": "Yaila Ustate",
+      "email": "yaila@mail.com",
+      "password": "123456",
+      "role": "admin",
+      "id": 3
+    },
+    {
+      "name": "Juan Rangel",
+      "email": "juan@gmail.com",
+      "password": "123456",
+      "role": "admin",
+      "id": 4
     }
   ],
   "tasks": [
@@ -34,7 +48,7 @@
       "id": 5,
       "title": "Pricing Tier Update",
       "description": "Final sign-off required for the Enterprise plan structural changes.",
-      "status": "done",
+      "status": "in review",
       "userId": 1
     },
     {
@@ -42,7 +56,7 @@
       "title": "Privacy Policy v2",
       "description": "Review GDPR compliance updates for the European expansion.",
       "status": "todo",
-      "userId": 2
+      "userId": 1
     },
     {
       "id": 7,

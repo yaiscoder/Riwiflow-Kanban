@@ -61,20 +61,8 @@ export const sidebar = {
               </a>
             </nav>
 
-            <!-- Parte inferior: avatar, logout y botón New Task -->
+            <!-- Parte inferior: logout y botón New Task -->
             <div class="px-4 mt-auto space-y-3">
-
-              <!-- Info del usuario logueado -->
-              <div class="flex items-center gap-3 px-3 py-2 bg-surface-container rounded-xl">
-                <div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-[11px] shrink-0">
-                  ${initials}
-                </div>
-                <div class="flex-1 min-w-0">
-                  <p class="font-label-md text-label-md text-on-surface truncate">${userName}</p>
-                  <p class="font-label-sm text-label-sm text-on-surface-variant capitalize">${userRole}</p>
-                </div>
-              </div>
-
               <!-- Botón de Logout -->
               <button id="logoutBtn" class="w-full flex items-center justify-center gap-2 py-2.5 px-4 border border-outline-variant rounded-xl font-label-md text-label-md text-secondary hover:text-error hover:border-error/30 hover:bg-error/5 transition-all">
                 <span class="material-symbols-outlined text-[18px]">logout</span>
