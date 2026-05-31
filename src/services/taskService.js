@@ -2,7 +2,7 @@
 // Aquí están todas las funciones para hablar con la API de tareas.
 // Usamos fetch() para hacer peticiones HTTP al servidor json-server.
 
-const API_URL = 'http://localhost:3000';
+const API_URL = import.meta.env.VITE_API_URL;
 
 // Obtiene TODAS las tareas del servidor
 export async function getTasks() {

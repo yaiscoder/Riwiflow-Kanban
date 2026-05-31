@@ -3,7 +3,7 @@
 // Como no tenemos un backend real con autenticación, buscamos el usuario
 // manualmente en la lista de usuarios del json-server.
 
-const API_URL = 'http://localhost:3000';
+const API_URL = import.meta.env.VITE_API_URL;
 
 // Intenta hacer login con el email y contraseña dados
 export async function login(email, password) {

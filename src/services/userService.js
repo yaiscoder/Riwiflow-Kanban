@@ -1,7 +1,7 @@
 
 // Aquí están todas las funciones para hablar con la API de usuarios.
 
-const API_URL = 'http://localhost:3000';
+const API_URL = import.meta.env.VITE_API_URL;
 
 // Obtiene TODOS los usuarios del servidor
 export async function getUsers() {

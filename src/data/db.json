@@ -20,14 +20,14 @@
       "id": 1,
       "title": "User Flow Mapping",
       "description": "Define the end-to-end journey for the new onboarding experience.",
-      "status": "todo",
+      "status": "in progress",
       "userId": 2
     },
     {
       "id": 3,
       "title": "API Documentation",
       "description": "Updating the public API docs for the v2.4 release next week.",
-      "status": "in progress",
+      "status": "in review",
       "userId": 2
     },
     {
@@ -41,7 +41,7 @@
       "id": 6,
       "title": "Privacy Policy v2",
       "description": "Review GDPR compliance updates for the European expansion.",
-      "status": "in review",
+      "status": "todo",
       "userId": 2
     },
     {
