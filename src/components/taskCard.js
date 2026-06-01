@@ -8,7 +8,7 @@ import { canDragTask } from '../utils/dragDrop.js';
 // Convierte el valor del status (guardado en la base de datos)
 // en un texto legible para mostrar en la interfaz
 function getStatusLabel(status) {
-    if (status === 'todo')        return 'To Do';
+    if (status === 'to do')        return 'To Do';
     if (status === 'in progress') return 'In Progress';
     if (status === 'in review')   return 'In Review';
     if (status === 'done')        return 'Done';
@@ -17,7 +17,7 @@ function getStatusLabel(status) {
 
 // Devuelve las clases CSS del color del badge según el status
 function getStatusBadgeClasses(status) {
-    if (status === 'todo')        return 'bg-surface-container-high text-on-surface-variant';
+    if (status === 'to do')        return 'bg-surface-container-high text-on-surface-variant';
     if (status === 'in progress') return 'bg-primary-container text-on-primary';
     if (status === 'in review')   return 'bg-primary-fixed text-on-primary-fixed-variant';
     if (status === 'done')        return 'bg-secondary-container text-secondary';

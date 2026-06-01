@@ -64,7 +64,7 @@ export function renderTaskForm(task, users) {
             <div class="space-y-sm">
               <label class="font-label-md text-label-md text-on-surface" for="taskStatus">Status</label>
               <select id="taskStatus" class="w-full px-md py-md bg-white border border-outline-variant rounded-lg font-body-md text-body-md text-on-surface input-focus-ring transition-all">
-                <option value="todo"        ${isEditing && task.status === 'todo'        ? 'selected' : ''}>To Do</option>
+                <option value="to do"        ${isEditing && task.status === 'to do'        ? 'selected' : ''}>To Do</option>
                 <option value="in progress" ${isEditing && task.status === 'in progress' ? 'selected' : ''}>In Progress</option>
                 <option value="in review"   ${isEditing && task.status === 'in review'   ? 'selected' : ''}>In Review</option>
                 <option value="done"        ${isEditing && task.status === 'done'        ? 'selected' : ''}>Done</option>

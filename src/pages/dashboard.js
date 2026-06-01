@@ -9,7 +9,7 @@ const API_URL = import.meta.env.VITE_API_URL;
 
 // Las columnas del tablero Kanban (en orden de izquierda a derecha)
 const KANBAN_COLUMNS = [
-    { id: 'todo',        label: 'To Do'       },
+    { id: 'to do',        label: 'To Do'       },
     { id: 'in progress', label: 'In Progress' },
     { id: 'in review',   label: 'In Review'   },
     { id: 'done',        label: 'Done'        }
@@ -138,7 +138,7 @@ const Dashboard = {
                       <div class="space-y-sm">
                         <label class="font-label-md text-label-md text-on-surface" for="taskStatus">Status</label>
                         <select id="taskStatus" class="w-full px-md py-md bg-white border border-outline-variant rounded-lg font-body-md text-body-md text-on-surface input-focus-ring transition-all">
-                          <option value="todo">To Do</option>
+                          <option value="to do">To Do</option>
                           <option value="in progress">In Progress</option>
                           <option value="in review">In Review</option>
                           <option value="done">Done</option>
@@ -181,7 +181,7 @@ const Dashboard = {
                     <div class="space-y-sm">
                       <label class="font-label-md text-label-md text-on-surface" for="editStatus">Status</label>
                       <select id="editStatus" class="w-full px-md py-md bg-white border border-outline-variant rounded-lg font-body-md text-body-md text-on-surface input-focus-ring transition-all">
-                        <option value="todo">To Do</option>
+                        <option value="to do">To Do</option>
                         <option value="in progress">In Progress</option>
                         <option value="in review">In Review</option>
                         <option value="done">Done</option>
@@ -323,7 +323,7 @@ const Dashboard = {
 
 // Convierte el valor de status en texto legible
 function getStatusLabel(status) {
-    if (status === 'todo')        return 'To Do';
+    if (status === 'to do')        return 'To Do';
     if (status === 'in progress') return 'In Progress';
     if (status === 'in review')   return 'In Review';
     if (status === 'done')        return 'Done';
@@ -527,7 +527,7 @@ async function openCreateModal() {
     document.getElementById('taskId').value          = '';
     document.getElementById('taskTitle').value       = '';
     document.getElementById('taskDescription').value = '';
-    document.getElementById('taskStatus').value      = 'todo';
+    document.getElementById('taskStatus').value      = 'to do';
     document.getElementById('modalTitle').textContent = 'Create Task';
     document.getElementById('taskError').classList.add('hidden');
 

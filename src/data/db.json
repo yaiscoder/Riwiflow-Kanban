@@ -48,14 +48,14 @@
       "id": 5,
       "title": "Pricing Tier Update",
       "description": "Final sign-off required for the Enterprise plan structural changes.",
-      "status": "in review",
+      "status": "in progress",
       "userId": 1
     },
     {
       "id": 6,
       "title": "Privacy Policy v2",
       "description": "Review GDPR compliance updates for the European expansion.",
-      "status": "todo",
+      "status": "to do",
       "userId": 1
     },
     {
